@@ -31,7 +31,7 @@
         <div class="container-fluid">
 
         <ul class="navbar-nav menu nav nav-pills nav-fill">
-           <li class="nav-item" >
+           <li class="nav-item" @click="reparationInfo()">
             <a class="nav-link" href="#">
               <i class="fas fa-tools"></i>
                Réparation informatique              
@@ -79,6 +79,11 @@
 <script>
 export default {
   name: 'Header',
+  methods: {
+    reparationInfo () {
+      this.$router.push('/ReparationInfo')
+    },
+  }
 }
 </script>
 

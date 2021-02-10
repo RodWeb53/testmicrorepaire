@@ -75,8 +75,8 @@
               <h2>Magasin</h2>
             </div>
             <div class="card-body">
-              <p>face à la loire</p>
-              <p>49000 Chalonnes sur loire</p>
+              <p>21 Rue du Vieux Pont</p>
+              <p>49290 Chalonnes-sur-Loire</p>
               <img class="magasin" src="../assets/magasin.png" alt="photo du magasin de Chalonnes">
             </div>
           </div>

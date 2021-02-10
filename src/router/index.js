@@ -1,12 +1,14 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Acceuil from '../views/Acceuil.vue'
+import ReparationInfo from '../views/ReparationInfo.vue'
 
 const routes = [
-  {
-    path: '/',
+  { path: '/',
     name: 'Acceuil',
-    component: Acceuil
-  },
+    component: Acceuil },
+  { path: '/ReparationInfo',
+  name: 'ReparationInfo',
+  component: ReparationInfo },
   
 ]
 
