@@ -5,13 +5,13 @@
       <div class="container">
         <splide :options="options">
           <splide-slide class="image">
-            <img src="../assets/carousel/img4.jpg">
+            <img src="../assets/carousel/image1.jpg">
           </splide-slide>
           <splide-slide class="image">
-            <img src="../assets/carousel/img4.jpg">
+            <img src="../assets/carousel/image2.jpg">
           </splide-slide>
           <splide-slide class="image">
-            <img src="../assets/carousel/img3.jpg">
+            <img src="../assets/carousel/image3.jpg">
           </splide-slide>
           <splide-slide class="image">
             <img src="../assets/carousel/img4.jpg">
@@ -59,11 +59,14 @@
             <div class="card-body">
               <h3>Horaire magasin</h3>
               <ul>
-                <li>mercredi 9h à 12h et 13h à 19h</li>
+                <li>Lundi 14h à 19h</li>
+                <li>Mardi 8h30 à 12h</li>
+                <li>mercredi 13h30 à 19h</li>
+                <li>Vendredi 14h à 19h</li>
               </ul>
               <h3>Horaire intervention sur site</h3>
               <ul>
-                <li>lundi / mardi / jeudi / vendredi</li>
+                <li>Du lundi au vendredi</li>
                 <li>De 9h à 19h</li>
               </ul>
             </div>
@@ -77,7 +80,7 @@
             <div class="card-body">
               <p>21 Rue du Vieux Pont</p>
               <p>49290 Chalonnes-sur-Loire</p>
-              <img class="magasin" src="../assets/magasin.png" alt="photo du magasin de Chalonnes">
+              <img class="magasin" src="../assets/FaceMagasins.jpg" alt="photo du magasin de Chalonnes">
             </div>
           </div>
         </div>
@@ -137,7 +140,7 @@ ul {
   max-height: 95%;
 }
 .magasin {
-  width: 250px;
+  width: 380px;
 }
 .couleurCard {
   background: #343A40;

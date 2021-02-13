@@ -5,10 +5,12 @@
 
       <div class="container-fluid">
         <div class="col-md-8 col-lg-10  text-center">
-          <div class="navbar-brand logoCenter">
-            <h1 class="text-center"> MICROREPAIRE</h1>
-            <h2>Informatique Atelier Conseil</h2>
-          </div> 
+          <router-link :to="`/`">
+            <div class="navbar-brand logoCenter">
+              <h1 class="text-center"> MICROREPAIRE</h1>
+              <h2>Informatique Atelier Conseil</h2>
+            </div> 
+          </router-link>
         </div>
         <div class="col-md-4 col-lg-2">
           <div class="headerDroitVisible "> 
@@ -34,22 +36,22 @@
            <li class="nav-item" @click="reparationInfo()">
             <a class="nav-link" href="#">
               <i class="fas fa-tools"></i>
-               Réparation informatique              
+               Réparation configuration              
             </a>
           </li>
-          <li class="nav-item" >
+          <li class="nav-item" @click="vente()">
             <a class="nav-link" href="#">
               <i class="fas fa-cart-arrow-down"></i>
-               Vente
+               Achat - conseil
             </a>
           </li>
-          <li class="nav-item" >
+          <li class="nav-item" @click="aideInstal()">
             <a class="nav-link" href="#">
               <i class="fas fa-hand-holding-medical"></i>
                Aide instalation
             </a>
           </li>
-          <li class="nav-item" >
+          <li class="nav-item" @click="contrat()">
             <a class="nav-link" href="#">
               <i class="fas fa-file-contract"></i>
                Contrat maintenance
@@ -58,7 +60,7 @@
           <li class="nav-item" >
             <a class="nav-link" href="#">
               <i class="fas fa-tools"></i>
-               Réparation électrique
+               Réparation électronique
             </a>
           </li>
           <li class="nav-item" >
@@ -82,6 +84,15 @@ export default {
   methods: {
     reparationInfo () {
       this.$router.push('/ReparationInfo')
+    },
+    vente () {
+      this.$router.push('/Vente')
+    },
+    aideInstal () {
+      this.$router.push('/AideInstal')
+    },
+    contrat () {
+      this.$router.push('/Contrat')
     },
   }
 }
