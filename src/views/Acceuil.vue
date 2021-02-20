@@ -1,7 +1,7 @@
 <template>
   <div class="fond">
     <!-- Gestion du carousel -->
-    <div class="carous mt-4">
+    <div class="carous mt-4 ml-auto mr-auto">
       <div class="container">
         <splide :options="options">
           <splide-slide class="image">
@@ -112,7 +112,8 @@ export default {
   data () {
     return {
       options: {
-        height: '500px',
+        height: '600px',
+        width: '1024px',
       }
     }
   },

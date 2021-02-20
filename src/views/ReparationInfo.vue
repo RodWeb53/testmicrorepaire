@@ -10,7 +10,7 @@
         <!-- Première rangée de card -->
         <div class="container-fluid mt-4 mb-4">
           <div class="row justify-content-center ">
-            <div class="col-11">
+            <div class="col-md-12 col-lg-11">
               <div class="card-deck">
                 <div class="card">
                   <div class="card-header text-center">
@@ -121,4 +121,5 @@ export default {
   font-size: 3vh;
   padding-left: 5%;
 }
+
 </style>

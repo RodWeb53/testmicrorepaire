@@ -4,7 +4,7 @@
     <nav id="barnav" class="navbar navbar-icon-top navbar-expand-lg navbar-dark bg-dark">
 
       <div class="container-fluid">
-        <div class="col-md-8 col-lg-10  text-center">
+        <div class="col-md-7 col-lg-9  text-center">
           <router-link :to="`/`">
             <div class="navbar-brand logoCenter">
               <h1 class="text-center"> MICROREPAIRE</h1>
@@ -12,13 +12,13 @@
             </div> 
           </router-link>
         </div>
-        <div class="col-md-4 col-lg-2">
+        <div class="col-md-5 col-lg-3">
           <div class="headerDroitVisible "> 
             <ul class="header-list">
               <li class="nav-link">Diag et devis gratuit</li>
               <li class="nav-link">Lundi / vendredi</li>
               <li class="nav-link">de 9h à 19h</li>
-              <li class="nav-link">06.06.06.06</li>
+              <li class="nav-link">06.73.43.81.99</li>
             </ul>
           </div>
         </div>    
@@ -63,7 +63,7 @@
                Réparation électronique
             </a>
           </li>
-          <li class="nav-item" >
+          <li class="nav-item" @click="contact()">
             <a class="nav-link" href="#">
               <i class="fas fa-sign-out-alt"></i>
               Contact
@@ -93,6 +93,9 @@ export default {
     },
     contrat () {
       this.$router.push('/Contrat')
+    },
+    contact () {
+      this.$router.push('/Contact')
     },
   }
 }
