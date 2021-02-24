@@ -13,7 +13,7 @@
             <div class="col-md-12 col-lg-11">
               <div class="card-deck">
                 <div class="card">
-                  <div class="card-header text-center">
+                  <div class="card-header couleurCard text-center">
                     <h3>Réparation</h3>
                   </div>
                   <div class="card-body mt-2">
@@ -26,7 +26,7 @@
                   </div>
                 </div>
                 <div class="card">
-                  <div class="card-header text-center">
+                  <div class="card-header couleurCard text-center">
                     <h3>Changement</h3>
                   </div>
                   <div class="card-body mt-2">
@@ -41,7 +41,7 @@
                   </div>
                 </div>
                 <div class="card">
-                  <div class="card-header text-center">
+                  <div class="card-header couleurCard text-center">
                     <h3>Installation</h3>
                   </div>
                   <div class="card-body mt-2">
@@ -63,7 +63,7 @@
             <div class="col-11">
               <div class="card-deck">
                 <div class="card">
-                  <div class="card-header text-center">
+                  <div class="card-header couleurCard text-center">
                     <h3>Configuration</h3>
                   </div>
                   <div class="card-body mt-2">
@@ -79,7 +79,7 @@
                   </div>
                 </div>
                 <div class="card">
-                  <div class="card-header text-center">
+                  <div class="card-header couleurCard text-center">
                     <h3>Sauvegarde</h3>
                   </div>
                   <div class="card-body mt-2">
@@ -90,7 +90,7 @@
                   </div>
                 </div>
                 <div class="card">
-                  <div class="card-header text-center">
+                  <div class="card-header couleurCard text-center">
                     <h3>Nettoyage</h3>
                   </div>
                   <div class="card-body mt-2">
@@ -104,7 +104,7 @@
             </div>
           </div>
         </div>
-      </div>
+       </div>
     </div>
   </div>
 </template>
@@ -120,6 +120,18 @@ export default {
 .textBase {
   font-size: 3vh;
   padding-left: 5%;
+}
+.couleurCard {
+  background: #343A40;
+  color: #fff;
+}
+@media (max-width: 375px){
+ .textBase {
+  padding-left: 0%;
+}
+h3 {
+  font-size: 3vh;
+}
 }
 
 </style>

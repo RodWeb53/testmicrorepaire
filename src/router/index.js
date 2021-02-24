@@ -5,6 +5,7 @@ import Vente from '../views/Vente.vue'
 import AideInstal from '../views/AideInstal.vue'
 import Contrat from '../views/Contrat.vue'
 import Contact from '../views/Contact.vue'
+import ReparationElec from '../views/ReparationElec.vue'
 
 const routes = [
   { path: '/',
@@ -26,6 +27,10 @@ const routes = [
   { path: '/Contrat',
   name: 'Contrat',
   component: Contrat },
+
+  { path: '/ReparationElec',
+  name: 'ReparationElec',
+  component: ReparationElec },
 
   { path: '/Contact',
   name: 'Contact',

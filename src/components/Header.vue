@@ -57,10 +57,10 @@
                Contrat maintenance
             </a>
           </li>
-          <li class="nav-item" >
+          <li class="nav-item" @click="reparationElec()">
             <a class="nav-link" href="#">
               <i class="fas fa-tools"></i>
-               Réparation électronique
+               Réparation électronique 
             </a>
           </li>
           <li class="nav-item" @click="contact()">
@@ -94,6 +94,9 @@ export default {
     contrat () {
       this.$router.push('/Contrat')
     },
+    reparationElec () {
+      this.$router.push('/ReparationElec')
+    },
     contact () {
       this.$router.push('/Contact')
     },
@@ -113,8 +116,16 @@ export default {
   width: 100%;
 }
 
+@media (max-width: 375px){
+h1 {
+  font-size: 4vh;
+}
+h2 {
+  font-size: 3vh;
+}
+  }
 
-@media (max-width: 768px){
+@media (max-width: 576px){
   .headerDroitVisible {
     display: none;
   }

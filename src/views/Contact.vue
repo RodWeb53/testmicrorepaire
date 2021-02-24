@@ -8,7 +8,7 @@
             <div class="col-sm-12 col-lg-11">
               <div class="card-deck">
                 <div class="card">
-                  <div class="card-header text-center">
+                  <div class="card-header couleurCard text-center">
                     <h3>Profil</h3>
                   </div>
                   <div class="card-body mt-2">
@@ -16,7 +16,7 @@
                   </div>
                 </div>
                 <div class="card">
-                  <div class="card-header text-center">
+                  <div class="card-header couleurCard text-center">
                     <h3>Qui suis-je ?</h3>
                   </div>
                   <div class="card-body mt-2">
@@ -33,7 +33,7 @@
             <div class="col-11">
               <div class="card-deck">
                 <div class="card">
-                  <div class="card-header text-center">
+                  <div class="card-header couleurCard text-center">
                     <h3>Comment me joindre</h3>
                   </div>
                   <div class="card-body mt-2">
@@ -56,7 +56,7 @@
                   </div>
                 </div>
                 <div class="card">
-                  <div class="card-header text-center">
+                  <div class="card-header couleurCard text-center">
                     <h3>Réseaux</h3>
                   </div>
                   <div class="card-body mt-2">
@@ -74,12 +74,12 @@
           <div class="row justify-content-center ">
             <div class="col-11">
               <div class="card">
-                <div class="card-header text-center">
+                <div class="card-header couleurCard text-center">
                   <h3>Articles de presse</h3>
                 </div>
                 <div class="card-body mt-2 ml-auto mr-auto">
                   <div>
-                    <img class="mr-4" src="../assets/article1-min.png" alt="Article de Ouest France du 16/12/2019">
+                    <img class="mr-4 artpresse" src="../assets/article1-min.png" alt="Article de Ouest France du 16/12/2019">
                     <img class="ml-4" src="../assets/article2-min.png" alt="article N° 2">
                   </div>
                 </div>
@@ -105,5 +105,20 @@ export default {
 .textBase {
   font-size: 3vh;
   padding-left: 5%;
+}
+.couleurCard {
+  background: #343A40;
+  color: #fff;
+}
+@media (max-width: 375px){
+ .textBase {
+  padding-left: 0%;
+}
+h3 {
+  font-size: 3vh;
+}
+.artpresse {
+  width: 250px;
+}
 }
 </style>

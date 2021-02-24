@@ -11,7 +11,7 @@
             <div class="col-11">
               <div class="card-deck">
                 <div class="card">
-                  <div class="card-header text-center">
+                  <div class="card-header couleurCard text-center">
                     <h3>Contrat</h3>
                   </div>
                   <div class="card-body mt-2">
@@ -33,7 +33,7 @@
                   </div>
                 </div>
                 <div class="card">
-                  <div class="card-header text-center">
+                  <div class="card-header couleurCard text-center">
                     <h3>Recyclage</h3>
                   </div>
                   <div class="card-body mt-2">
@@ -43,6 +43,7 @@
                           <li>Recyclage</li>
                           <li>Respect du RGPD</li>
                           <li>Affilié à REPAR'ACTEURS des Pays de la Loire</li>
+                          <li class="lignelogo"><img class="logorepar" src="../assets/reparacteur-min.png" alt="Logo reparacteurs des pays de la loire"></li>
                         </ul>
                     </ul>
                   </div>
@@ -67,5 +68,26 @@ export default {
 .textBase {
   font-size: 3vh;
   padding-left: 5%;
+}
+.couleurCard {
+  background: #343A40;
+  color: #fff;
+}
+.logorepar {
+  width: 200px;
+}
+.lignelogo {
+  list-style: none;
+}
+@media (max-width: 375px){
+ .textBase {
+  padding-left: 0%;
+}
+h3 {
+  font-size: 3vh;
+}
+.logorepar {
+  width: 150px;
+}
 }
 </style>

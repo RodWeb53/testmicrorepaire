@@ -12,7 +12,7 @@
             <div class="col-11">
               <div class="card-deck">
                 <div class="card">
-                  <div class="card-header text-center">
+                  <div class="card-header couleurCard text-center">
                     <h3>Audio visuel</h3>
                   </div>
                   <div class="card-body mt-2">
@@ -24,7 +24,7 @@
                   </div>
                 </div>
                 <div class="card">
-                  <div class="card-header text-center">
+                  <div class="card-header couleurCard text-center">
                     <h3>Mise en service</h3>
                   </div>
                   <div class="card-body mt-2">
@@ -48,7 +48,7 @@
             <div class="col-11">
               <div class="card-deck">
                 <div class="card">
-                  <div class="card-header text-center">
+                  <div class="card-header couleurCard text-center">
                     <h3>Configuration</h3>
                   </div>
                   <div class="card-body mt-2">
@@ -63,7 +63,7 @@
                   </div>
                 </div>
                 <div class="card">
-                  <div class="card-header text-center">
+                  <div class="card-header couleurCard text-center">
                     <h3>Accompagnement projet</h3>
                   </div>
                   <div class="card-body mt-2">
@@ -98,5 +98,18 @@ export default {
 .textBase {
   font-size: 3vh;
   padding-left: 5%;
+}
+.couleurCard {
+  background: #343A40;
+  color: #fff;
+}
+
+@media (max-width: 375px){
+ .textBase {
+  padding-left: 0%;
+}
+h3 {
+  font-size: 3vh;
+}
 }
 </style>

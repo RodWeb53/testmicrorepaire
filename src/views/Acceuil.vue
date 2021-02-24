@@ -5,19 +5,19 @@
       <div class="container">
         <splide :options="options">
           <splide-slide class="image">
-            <img src="../assets/carousel/image1.jpg">
+            <img src="../assets/carousel/image1.jpg" alt="Thomas dans l'entrée de son magasin de Chalonnes sur loire">
           </splide-slide>
           <splide-slide class="image">
-            <img src="../assets/carousel/image2.jpg">
+            <img src="../assets/carousel/image2.jpg" alt="microrepaire en cours de maintenance sur des PC">
           </splide-slide>
           <splide-slide class="image">
-            <img src="../assets/carousel/image3.jpg">
+            <img src="../assets/carousel/image3.jpg" alt="Démontage d'un PC portable dans le magasin proche d'Angers">
           </splide-slide>
           <splide-slide class="image">
-            <img src="../assets/carousel/img4.jpg">
+            <img src="../assets/carousel/img4.jpg" alt="Plaquette du magasin Microrepaire">
           </splide-slide>
           <splide-slide class="image">
-            <img src="../assets/carousel/img4.jpg">
+            <img src="../assets/carousel/img4.jpg" alt="idem de l'image précédente">
           </splide-slide>
         </splide>
       </div>
@@ -147,4 +147,17 @@ ul {
   background: #343A40;
   color: #fff;
 }
+
+@media only screen and (max-width: 600px) {
+.magasin {
+  width: 200px;
+}
+iframe {
+  width: 100%;
+}
+h2 {
+  font-size: 3.5vh;
+}
+}
+
 </style>
