@@ -34,37 +34,37 @@
 
         <ul class="navbar-nav menu nav nav-pills nav-fill">
            <li class="nav-item" @click="reparationInfo()">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="#" title="Réparation informatique">
               <i class="fas fa-tools"></i>
                Réparation configuration              
             </a>
           </li>
           <li class="nav-item" @click="vente()">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="#" title="Vente">
               <i class="fas fa-cart-arrow-down"></i>
                Achat - conseil
             </a>
           </li>
           <li class="nav-item" @click="aideInstal()">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="#" title="aide à l'installation">
               <i class="fas fa-hand-holding-medical"></i>
                Aide instalation
             </a>
           </li>
           <li class="nav-item" @click="contrat()">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="#" title="contrat de maintenance">
               <i class="fas fa-file-contract"></i>
                Contrat maintenance
             </a>
           </li>
           <li class="nav-item" @click="reparationElec()">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="#" title="Réparation Electronique">
               <i class="fas fa-tools"></i>
                Réparation électronique 
             </a>
           </li>
           <li class="nav-item" @click="contact()">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="#" title="Contact">
               <i class="fas fa-sign-out-alt"></i>
               Contact
             </a>

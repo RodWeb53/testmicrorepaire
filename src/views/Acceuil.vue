@@ -5,7 +5,7 @@
       <div class="container">
         <splide :options="options">
           <splide-slide class="image">
-            <img src="../assets/carousel/image1.jpg" alt="Thomas dans l'entrée de son magasin de Chalonnes sur loire">
+            <img src="../assets/carousel/image1.jpg" alt="Thomas dans l'entrée de son magasin de Chalonnes sur loire" title="photo de Thomas Microrepaire">
           </splide-slide>
           <splide-slide class="image">
             <img src="../assets/carousel/image2.jpg" alt="microrepaire en cours de maintenance sur des PC">
@@ -80,7 +80,7 @@
             <div class="card-body">
               <p>21 Rue du Vieux Pont</p>
               <p>49290 Chalonnes-sur-Loire</p>
-              <img class="magasin" src="../assets/FaceMagasins.jpg" alt="photo du magasin de Chalonnes">
+              <img class="magasin" src="../assets/FaceMagasins.jpg" alt="photo du magasin de Chalonnes" title="Photo du magasin microrepaire de Chalonnes sur loire">
             </div>
           </div>
         </div>
