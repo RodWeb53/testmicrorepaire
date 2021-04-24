@@ -13,11 +13,11 @@
           </router-link>
         </div>
         <div class="col-md-5 col-lg-3">
-          <div class="headerDroitVisible "> 
+          <div class="headerDroitVisible"> 
             <ul class="header-list">
-              <li class="nav-link">Diag et devis gratuit</li>
-              <li class="nav-link">Lundi / vendredi</li>
-              <li class="nav-link">de 9h à 19h</li>
+              <li class="nav-link">Diagnostique et devis gratuit</li>
+              <li class="nav-link">Du lundi au vendredi</li>
+              <li class="nav-link">De 9h à 19h</li>
               <li class="nav-link">06.73.43.81.99</li>
             </ul>
           </div>
@@ -36,19 +36,19 @@
            <li class="nav-item" @click="reparationInfo()">
             <a class="nav-link" href="#" title="Réparation informatique">
               <i class="fas fa-tools"></i>
-               Réparation configuration              
+               Réparation et configuration              
             </a>
           </li>
           <li class="nav-item" @click="vente()">
             <a class="nav-link" href="#" title="Vente">
               <i class="fas fa-cart-arrow-down"></i>
-               Achat - conseil
+               Conseil à l'achat
             </a>
           </li>
           <li class="nav-item" @click="aideInstal()">
             <a class="nav-link" href="#" title="aide à l'installation">
               <i class="fas fa-hand-holding-medical"></i>
-               Aide instalation
+               Aide à l'installation
             </a>
           </li>
           <li class="nav-item" @click="contrat()">
@@ -106,29 +106,46 @@ export default {
 
 <style scoped>
 
+a {
+  font-size: 2.5vh;
+}
+.headerDroitVisible {
+  font-size: 1.8vh;
+}
 .header-list {
   text-decoration: none;
   color: white !important;
   text-align: end;
-
 }
 .menu {
   width: 100%;
 }
 
-@media (max-width: 375px){
+@media (max-width: 475px){
 h1 {
   font-size: 4vh;
 }
 h2 {
   font-size: 3vh;
 }
-  }
+.headerDroitVisible {
+  display: none;
+}
+}
 
-@media (max-width: 576px){
+@media (min-width: 476px) and (max-width: 778px){
   .headerDroitVisible {
     display: none;
   }
 }
-
+@media (min-width: 991px) and (max-width: 1065px){
+a {
+  font-size: 1.7vh;
+}
+}
+@media (min-width: 1066px) and (max-width: 1280px){
+a {
+  font-size: 1.9vh;
+}
+}
 </style>

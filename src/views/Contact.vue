@@ -1,10 +1,10 @@
 <template>
-  <div>
+  <div class="fond">
     <div class="container-fluid">
 
         <!-- Première rangée de card -->
-        <div class="container-fluid mt-4 mb-4">
-          <div class="row justify-content-center ">
+        <div class="container-fluid pt-5 pb-4">
+          <div class="row justify-content-center">
             <div class="col-sm-12 col-lg-11">
               <div class="card-deck">
                 <div class="card">
@@ -12,7 +12,7 @@
                     <h3>Profil</h3>
                   </div>
                   <div class="card-body mt-2">
-                    <img src="../assets/carousel/img3.jpg" alt="Photo de Thomas">
+                    <img class="profil" src="../assets/carousel/img3.jpg" alt="Photo de Thomas">
                   </div>
                 </div>
                 <div class="card">
@@ -37,33 +37,34 @@
                     <h3>Comment me joindre</h3>
                   </div>
                   <div class="card-body mt-2">
-                    <ul>
-                      <li>Du lundi au vendredi de 9h à 19h</li>
+                    <div class="row">
+                      <div class="col-sm-12 col-md-12 col-lg-4 ml-auto mr-auto centre">
                         <ul>
-                          <li><i class="fas fa-phone-alt"> </i> 06 73 43 81 99</li>
-                          <li><i class="far fa-envelope"> </i> microrepaire@gmail.com</li>
+                          <li>Du lundi au vendredi de 9h à 19h</li>
+                            <ul>
+                              <li><i class="fas fa-phone-alt"> </i> 06 73 43 81 99</li>
+                              <li><i class="far fa-envelope"> </i> microrepaire@gmail.com</li>
+                            </ul>
                         </ul>
-                      <li>Magasin</li>
+                      </div>
+                      <div class="col-sm-12 col-md-6 col-lg-4 ml-auto mr-auto centre">
                         <ul>
-                          <li>21 Rue du Vieux Pont</li>
-                          <li>49290 Chalonnes-sur-Loire</li>
+                          <li>Magasin</li>
+                            <ul>
+                              <li>21 Rue du Vieux-Pont</li>
+                              <li>49290 Chalonnes-sur-Loire</li>
+                            </ul>
+                        </ul>
+                      </div>
+                      <div class="col-sm-12 col-md-6 col-lg-4 ml-auto mr-auto centre">
+                        <ul>
                           <li>Lundi 14h à 19h</li>
                           <li>Mardi 8h30 à 12h</li>
                           <li>mercredi 13h30 à 19h</li>
                           <li>Vendredi 14h à 19h</li>
                         </ul>
-                    </ul>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-header couleurCard text-center">
-                    <h3>Réseaux</h3>
-                  </div>
-                  <div class="card-body mt-2">
-                    <ul>
-                      <li>Faccebook</li>
-                      <li>Twitter</li>
-                    </ul>
+                      </div>
+                     </div>
                   </div>
                 </div>
               </div>
@@ -101,7 +102,10 @@ export default {
 </script>
 
 <style scoped>
-
+.fond {
+  background: rgb(52,58,64);
+  background: linear-gradient(180deg, rgba(52,58,64,1) 0%, rgb(240, 244, 247) 100%);
+}
 .textBase {
   font-size: 3vh;
   padding-left: 5%;
@@ -110,6 +114,10 @@ export default {
   background: #343A40;
   color: #fff;
 }
+.profil {
+  width: 100%;
+}
+
 @media (max-width: 375px){
  .textBase {
   padding-left: 0%;
@@ -117,8 +125,24 @@ export default {
 h3 {
   font-size: 3vh;
 }
+li {
+  font-size: 1.8vh;
+}
 .artpresse {
-  width: 250px;
+  width: 200px;
+}
+}
+@media (min-width: 376px) and (max-width: 620px){
+.artpresse {
+  width: 280px;
+}
+li {
+  font-size: 2vh;
+}
+}
+@media (min-width: 621px) and (max-width: 820px){
+li {
+  font-size: 1.8vh;
 }
 }
 </style>

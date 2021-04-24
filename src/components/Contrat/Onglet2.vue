@@ -1,0 +1,75 @@
+<template>
+  <div class="boite">
+    <div>
+      <div class="shadow pl-4 pt-2 pb-2 mt-4 mb-2 rounded contenu">
+        <p>Récupération de votre matériel obsolète</p>
+      </div>
+      <div class="shadow pl-4 pt-2 pb-2 mt-2 mb-2 rounded contenu">
+        <p><img src="./flecheblanc.png" alt="flèche blanche">Recyclage</p>
+      </div>
+      <div class="shadow pl-4 pt-2 pb-2 mt-2 mb-2 rounded contenu">
+        <p><img src="./flecheblanc.png" alt="flèche blanche">Respect du RGPD</p>
+      </div>
+      <div class="shadow pl-4 pt-2 pb-2 mt-2 mb-2 rounded contenu">
+        <p><img src="./flecheblanc.png" alt="flèche blanche">Affilié à REPAR'ACTEURS des Pays-de-la-Loire</p>
+      </div>
+      <div class="shadow pl-4 pt-2 pb-2 mt-2 mb-4 rounded contenu">
+        <p><img class="logorepar" src="./reparacteur-min.png" alt="Logo reparacteurs des pays de la loire"></p>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+
+export default {
+  name: "Onglet2",
+}
+
+</script>
+
+<style scoped>
+* {
+  margin: 0;
+  padding: 0;
+}
+img {
+  padding-right: 10px;
+}
+.contenu {
+  margin-left: 70px;
+  width: 90%;
+  background-color: #4F531A;
+  color: #FFFFFF;
+}
+p {
+  font-size: 2.1vh;
+}
+.boite {
+  position: relative;
+  top: -10px;
+  bottom: -10px;
+  background-color: #6D7176;
+}
+.logorepar {
+  width: 200px;
+}
+.lignelogo {
+  list-style: none;
+}
+
+@media only screen and (max-width: 600px) {
+
+.contenu {
+  margin-left: 2%;
+  width: 95%;
+}
+p {
+  font-size: 2.5vh;
+}
+.logorepar {
+  width: 150px;
+}
+}
+
+</style>
