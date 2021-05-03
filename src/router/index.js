@@ -7,6 +7,7 @@ import Contrat from '../views/Contrat.vue'
 import Contact from '../views/Contact.vue'
 import ReparationElec from '../views/ReparationElec.vue'
 
+
 const routes = [
   { path: '/',
     name: 'Acceuil',

@@ -1,254 +1,414 @@
 <template>
   <div class="fond">
     <div class="container-fluid">
-      <div class="row">
-        <div class="col-12 mb-3">
-          <h2 class="text-center couleur mt-5">Réparation électronique et soudures</h2>
-          <p class="ml-5 mr-5 couleur textBase">L’électronique est dans tous les appareils de nos jours, téléphones, télévisions, chaines HIFI , consoles de jeux, ordinateurs… <br/>
-          Par exemple, un ordinateur qui ne démarre plus du tout, qui ne charge plus, ou bien un port usb arraché etc… <br/> Malgré le fait que la garantie soit passée de date, la panne peut souvent être réparée sans forcément changer la carte mère et engager des frais plus qu’onéreux. C’est d’autant plus important lorsque l’appareil en question nous a coûté assez cher, et auquel on tient beaucoup.
-</p>
+      <div class="row placetitre">
+        <div class="col-12">
+          <h2 class="text-center couleur">Réparation électronique et soudures</h2>
+          <p class="couleur textBase">L’électronique est dans tous les appareils de nos jours, téléphones, télévisions, chaines HIFI , consoles de jeux, ordinateurs… <br/>
+          Par exemple, un ordinateur qui ne démarre plus du tout, qui ne charge plus, ou bien un port usb arraché etc… <br/> Malgré le fait que la garantie soit passée de date, la panne peut souvent être réparée sans forcément changer la carte mère et engager des frais plus qu’onéreux. C’est d’autant plus important lorsque l’appareil en question nous a coûté assez cher, et auquel on tient beaucoup.</p>
         </div>
-        <div class="container-fluid ">
-          <!-- Début 1° onglet -->
-          <div class="btn btn1 largeur mt-3" v-on:click="toggleOnglet1">
-            <img class="taillerepa afficher" src="../assets/repasmartphone.png" alt="Logo de réparation">
-            <br>
-            <h3>Smartphones et tablettes</h3>
-          </div>
-          <!-- Affichage de l'onglet en petit taille -->
-            <div class="card mt-4 mb-5 affichePetit" v-if="toggle1">
-              <div ></div>
-              <onglet1></onglet1>
-            </div>
-          <!-- Fin 1° onglet -->
-          <!-- Début 2° onglet -->
-          <div class="btn btn2 largeur mt-3" v-on:click="toggleOnglet2">
-            <img class="taillerepa afficher" src="../assets/console.png" alt="Logo de changement">
-            <br>
-            <h3>Ordinateurs et consoles de jeux</h3>
-          </div>
-          <!-- Affichage de l'onglet en petit taille -->
-            <div class="card mt-4 mb-5 affichePetit" v-if="toggle2">
-              <div></div>
-              <onglet2></onglet2>
-            </div>
-          <!-- Fin 2° onglet -->
-          <!-- Début 3° onglet -->
-          <div class="btn btn3 largeur mt-3" v-on:click="toggleOnglet3">
-            <img class="taillerepa afficher" src="../assets/multimedia.png" alt="Logo de changement">
-            <br>
-            <h3>Systèmes HIFI et écrans plats</h3>
-          </div>
-          <!-- Affichage de l'onglet en petit taille -->
-            <div class="card mt-4 mb-5 affichePetit" v-if="toggle3">
-              <div></div>
-              <onglet3></onglet3>
-            </div>
-          <!-- Fin 3° onglet -->
-          <!-- Début 4° onglet -->
-          <div class="btn btn4 largeur mt-3" v-on:click="toggleOnglet4">
-            <img class="taillerepa afficher" src="../assets/rachat.png" alt="Logo de changement">
-            <br>
-            <h3>Rachat</h3>
-          </div>
-          <!-- Affichage de l'onglet en petit taille -->
-            <div class="card mt-4 mb-5 affichePetit" v-if="toggle4">
-              <div></div>
-              <onglet4></onglet4>
-            </div>
-          <!-- Fin 4° onglet -->
-
-          <!-- Gestion de l'affichage des commentaire au même endroit sur grand écran -->
-          <div class="card mt-4 mb-5 afficher couleurfond" v-if="toggle1">
-            <div class="barreOnglet1"></div>
-            <onglet1></onglet1>
-          </div>
-          <div class="card mt-4 mb-5 afficher couleurfond" v-if="toggle2">
-            <div class="barreOnglet2"></div>
-            <onglet2></onglet2>
-          </div>
-          <div class="card mt-4 mb-5 afficher couleurfond" v-if="toggle3">
-            <div class="barreOnglet3"></div>
-            <onglet3></onglet3>
-          </div>
-          <div class="card mt-4 mb-5 afficher couleurfond" v-if="toggle4">
-            <div class="barreOnglet4"></div>
-            <onglet4></onglet4>
-          </div>
-        </div>
-       </div>
+      </div>
     </div>
+    <section>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-1">
+          </div>
+          <div class="col-lg-3">
+            <div class="card repa">
+              <img class="taillerepa afficher" src="../assets/repasmartphone.png" alt="Logo de réparation smartphone et tablettes">
+              <h3>Smartphones et tablettes</h3>
+            </div>
+          </div>
+          <div class="col-lg-7 liste1">
+            <div class="card bg-transparent">
+              <div class="boite1">
+                <div>
+                  <div class="shadow rounded contenu">
+                    <p>Exemples de pannes pour IPhone et Android :</p>
+                  </div>
+                  <div class="shadow rounded contenu">
+                    <p>- Ecran cassé</p>
+                  </div>
+                  <div class="shadow rounded contenu">
+                    <p>- Prise de charge abîmée</p>
+                  </div>
+                  <div class="shadow rounded contenu">
+                    <p>- Batterie en fin de vie</p>
+                  </div>
+                  <div class="shadow rounded contenu">
+                    <p>- Ne démarre plus</p>
+                  </div>
+                  <div class="shadow rouge gras rounded contenu">
+                    <p>Sur devis</p>
+                  </div>
+                  <div class="shadow gras ital rounded contenu">
+                    <p>Ne répare pas les appareils encore sous garantie</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section2">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-1">
+          </div>
+          <div class="col-lg-7 liste2">
+            <div class="card bg-transparent">
+              <div class="boite2">
+                <div>
+                  <div class="shadow rounded contenu">
+                    <p>Exemples de pannes pour Mac et PC:</p>   
+                  </div>
+                  <div class="shadow rounded contenu">
+                    <p>- Ne démarre plus</p>
+                  </div>
+                  <div class="shadow rounded contenu">
+                    <p>- Ne charge plus</p>
+                  </div>
+                  <div class="shadow rounded contenu">
+                    <p>- Connecteurs abîmés (charge, son, USB, HDMI)</p>
+                  </div>
+                  <div class="shadow rounded contenu">
+                    <p>- Connecteurs abîmés (charge, son, USB, HDMI)</p>
+                  </div>
+                  <div class="shadow rounded contenu">
+                    <p>- Accident avec de l’eau</p>
+                  </div>
+                  <div class="shadow rounded contenu">
+                    <p>- Etc.</p>
+                  </div>
+                  <div class="shadow rouge gras rounded contenu">
+                    <p>Sur devis</p>
+                  </div>
+                  <div class="shadow rounded contenu">
+                    <p>Exemples de pannes pour les consoles de jeux :</p>
+                  </div>
+                  <div class="shadow rounded contenu">
+                    <p>- Ne démarre plus</p>
+                  </div>
+                  <div class="shadow rounded contenu">
+                    <p>- HDMI arraché ou cassé</p>
+                  </div>
+                  <div class="shadow rounded contenu">
+                    <p>- Etc.</p>
+                  </div>
+                  <div class="shadow rouge gras rounded contenu">
+                    <p>Sur devis</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 onglet2">
+            <div class="card repa2">
+              <img class="taillerepa afficher" src="../assets/console.png" alt="Logo de console et ordinateurs">
+              <h3>Ordinateurs et consoles de jeux</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container-fluid">
+        <div class="row changement">
+          <div class="col-lg-1">
+
+          </div>
+          <div class="col-lg-3">
+            <div class="card repa3">
+              <img class="taillerepa afficher" src="../assets/multimedia.png" alt="Logo de système hihi et écran plat">
+              <h3>Systèmes HIFI et écrans plats</h3>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="card bg-transparent">
+              <div class="boite3">
+                <div>
+                  <div class="shadow rounded contenu">
+                    <p>Exemples de pannes pour les TV :</p>
+                  </div>
+                  <div class="shadow rounded contenu">
+                    <p>- Ne s’allume plus</p>
+                  </div>
+                  <div class="shadow rounded contenu">
+                    <p>- La TV ne réagit plus à la télécommande</p>
+                  </div>
+                  <div class="shadow rounded contenu">
+                    <p>- Problèmes de couleurs</p>
+                  </div>
+                  <div class="shadow rounded contenu">
+                    <p>- Etc.</p>
+                  </div>
+                  <div class="shadow rouge gras rounded contenu">
+                    <p>Sur devis</p>
+                  </div>
+                  <div class="shadow rounded contenu">
+                    <p>Exemples de pannes pour la HIFI :</p>
+                  </div>
+                  <div class="shadow rounded contenu">
+                    <p>- Ne s’allume plus</p>
+                  </div>
+                  <div class="shadow rounded contenu">
+                    <p>- Défaut de son</p>
+                  </div>
+                  <div class="shadow rounded contenu">
+                    <p>- Lecteur CD ne s’ouvre plus</p>
+                  </div>
+                  <div class="shadow rounded contenu">
+                    <p>- Etc.</p>
+                  </div>
+                  <div class="shadow rouge gras rounded contenu">
+                    <p>Sur devis</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section4">
+      <div class="container-fluid">
+        <div class="row changement">
+          <div class="col-lg-1">
+          </div>
+          <div class="col-lg-7 liste4">
+            <div class="card bg-transparent">
+              <div class="boite4">
+                <div>
+                  <div class="shadow rounded contenu">
+                    <p>Rachat de matériel pour pièces</p>   
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 onglet4">
+            <div class="card repa4">
+              <img class="taillerepa afficher" src="../assets/rachat.png" alt="Logo de rachat matériel">
+              <h3>Rachat</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
 <script>
 
-import Onglet1 from '../components/RepaElec/Onglet1'
-import Onglet2 from '../components/RepaElec/Onglet2'
-import Onglet3 from '../components/RepaElec/Onglet3'
-import onglet4 from '../components/RepaElec/Onglet4'
 
 
 export default {
   name: 'ReparationElec',
-  data() {
-    return {
-      toggle1: true,
-      toggle2: false,
-      toggle3: false,
-      toggle4: false,
-    }
-  },
-  methods: {
-    toggleOnglet1: function(){
-      this.toggle1 = true
-      this.toggle2 = false
-      this.toggle3 = false
-      this.toggle4 = false
-    },
-    toggleOnglet2: function(){
-      this.toggle1 = false
-      this.toggle2 = true
-      this.toggle3 = false
-      this.toggle4 = false
-    },
-    toggleOnglet3: function(){
-      this.toggle1 = false
-      this.toggle2 = false
-      this.toggle3 = true
-      this.toggle4 = false
-    },
-    toggleOnglet4: function(){
-      this.toggle1 = false
-      this.toggle2 = false
-      this.toggle3 = false
-      this.toggle4 = true
-    },
-  },
-  components: {
-    'onglet1': Onglet1,
-    'onglet2': Onglet2,
-    'onglet3': Onglet3,
-    'onglet4': onglet4,
-  },
 
 }
 </script>
 
 <style scoped>
+
 .fond {
   background: rgb(52,58,64);
-  background: linear-gradient(180deg, rgba(52,58,64,1) 0%, rgba(154,157,160,1) 100%);
+  background: linear-gradient(180deg, rgba(52,58,64,1) 0%, rgba(239,246,224,1) 100%);
 }
-.couleurfond {
-  background-color: #6D7176;
+.rouge {
+  color: #000097;
 }
+.ital {
+  font-style: italic;
+}
+.gras {
+  font-weight: bold;
+  padding-left: 5%;
+}
+.card {
+  border-radius: 30px;
+}
+.fleche {
+  width: 10px;
+}
+.placetitre {
+  padding-top: 5%;
+}
+.repa {
+  text-align: center;
+  background: #EFF6E0;
+  margin-bottom: 3%;
+}
+img {
+  margin: 15px auto 15px auto;
+}
+
 .couleur {
   color: #fff;
 }
-.affichePetit {
-  display: none;
-}
-h3 {
-  font-size: 1.7vw;
-}
-.largeur {
-  width: 16.5%;
-  margin-left: 4%;
-  margin-right: 4%;
-}
-.btn {
-  border-radius: 25px;
-  color: #fff;
-}
-.btn1 {
-  background-color: #184875;
-}
-.btn2 {
-  background-color: #4F531A;
-}
-.btn3 {
-  background-color: #9B3819;
-}
-.btn4 {
-  background-color: #89396E;
-}
-.barreOnglet1 {
-  position: relative;
-  top: -20px;
-  left: 4.5%;
-  width: 15.5%;
-  height: 10px;
-  background: #184875;
-  border-radius: 5px;
-}
-.barreOnglet2 {
-  position: relative;
-  top: -20px;
-  left: 29%;
-  width: 15.5%;
-  height: 10px;
-  background: #4F531A;
-  border-radius: 5px;
-}
-.barreOnglet3 {
-  position: relative;
-  top: -20px;
-  left: 53.5%;
-  width: 15.5%;
-  height: 10px;
-  background: #9B3819;
-  border-radius: 5px;
-}
-.barreOnglet4 {
-  position: relative;
-  top: -20px;
-  left: 78%;
-  width: 15.5%;
-  height: 10px;
-  background: #89396E;
-  border-radius: 5px;
+p {
+  font-size: 2.1vh;
+  font-weight: bold;
 }
 .taillerepa {
   width: 50%;
   height: 50%;
 }
-
 .textBase {
   font-size: 3vh;
-  padding-left: 5%;
-  padding-right: 5%;
-  text-align: justify;
+  padding: 5% 10% 5% 10%;
 }
+.boite1 {
+  position: relative;
+  background-color: #EFF6E0;
+  padding-left: 5%;
+  padding-top: 1.5%;
+  padding-right: 5%;
+  border-radius: 30px;
+}
+.boite1 p {
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+  padding-left: 3.5%;
+}
+.changement {
+  padding-top: 1%;
+}
+.boite2 {
+  position: relative;
+  background-color: #AEC3B0;
+  padding-left: 5%;
+  padding-top: 1.5%;
+  padding-right: 5%;
+  border-radius: 30px;
+}
+.boite2 p {
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+  padding-left: 3.5%;
+}
+.repa2 {
+  text-align: center;
+  background: #AEC3B0;
+}
+.section2 {
+  padding-top: 1%;
+}
+
+
+.boite3 {
+  position: relative;
+  background-color: #99b3a9;
+  padding-left: 5%;
+  padding-top: 1.5%;
+  padding-right: 5%;
+  border-radius: 30px;
+}
+.boite3 p {
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+  padding-left: 3.5%;
+}
+.repa3 {
+  text-align: center;
+  background: #99b3a9;
+}
+
+.boite4 {
+  position: relative;
+  background-color: #84a3a1;
+  padding-left: 5%;
+  padding-top: 1.5%;
+  padding-right: 5%;
+  border-radius: 30px;
+}
+.boite4 p {
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+  padding-left: 3.5%;
+}
+.repa4 {
+  text-align: center;
+  background: #84a3a1;
+  margin-top: -1%;
+}
+.section4 {
+  padding-bottom: 3%;
+}
+
+
 
 @media (max-width: 375px){
  .textBase {
   padding-left: 0%;
   padding-right: 0%;
 }
-h3 {
-  font-size: 3vh;
+.repa2, .repa4 {
+  margin-top: 0px;
 }
-}
-@media only screen and (max-width: 600px) {
-.largeur {
-  width: 100%;
-}
-.afficher {
-  display: none;
-}
-.affichePetit {
-  display: inline-block;
-  width: 100%;
-  background-color: #6D7176;
-}
-h3 {
-  font-size: 3vh;
-}
-.largeur {
-  margin-left: 0.5%;
-  margin-right: 0.5%;
-}
+.taillerepa {
+  width: 30%;
+  height: 30%;
 }
 
+}
+@media only screen and (max-width: 600px) {
+.repa2, .repa3, .repa4 {
+  margin-top: 10px;
+}
+.repa {
+  margin-bottom: 0%;
+}
+
+section {
+  padding-left: 2%;
+  padding-right: 2%;
+}
+.taillerepa {
+  width: 30%;
+  height: 30%;
+}
+.liste2, .liste4 {
+  order: 2;
+}
+.onglet2, .onglet4 {
+  order: 1;
+}
+.liste6 {
+  margin-bottom: 5%;
+}
+}
+@media (min-width: 601px) and (max-width: 991px) {
+.repa2, .repa3, .repa4 {
+  margin-top: 10px;
+}
+.repa {
+  margin-bottom: 0%;
+}
+
+section {
+  padding-left: 2%;
+  padding-right: 2%;
+}
+.taillerepa {
+  width: 15%;
+  height: 15%;
+}
+.liste2, .liste4 {
+  order: 2;
+}
+.onglet2, .onglet4 {
+  order: 1;
+}
+
+}
+@media (min-width: 992px) and (max-width: 1480px) {
+.liste1 {
+  margin-bottom: 1%;
+}
+.repa2 {
+margin-top: 0px;
+}
+}
 </style>

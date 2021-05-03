@@ -4,7 +4,7 @@
     <nav id="barnav" class="navbar navbar-icon-top navbar-expand-lg navbar-dark bg-dark">
 
       <div class="container-fluid">
-        <div class="col-md-7 col-lg-9  text-center">
+        <div class="col text-center titre">
           <router-link :to="`/`">
             <div class="navbar-brand logoCenter">
               <h1 class="text-center"> MICROREPAIRE</h1>
@@ -12,16 +12,6 @@
             </div> 
           </router-link>
         </div>
-        <div class="col-md-5 col-lg-3">
-          <div class="headerDroitVisible"> 
-            <ul class="header-list">
-              <li class="nav-link">Diagnostique et devis gratuit</li>
-              <li class="nav-link">Du lundi au vendredi</li>
-              <li class="nav-link">De 9h à 19h</li>
-              <li class="nav-link">06.73.43.81.99</li>
-            </ul>
-          </div>
-        </div>    
       </div>
     </nav>
     <nav id="barnav1" class="navbar navbar-icon-top navbar-expand-lg navbar-dark bg-dark">
@@ -105,18 +95,18 @@ export default {
 </script>
 
 <style scoped>
-
+* {
+  margin: 0;
+  padding: 0;
+}
+.titre {
+  padding-bottom: 3%;
+  padding-top: 3%;
+}
 a {
   font-size: 2.5vh;
 }
-.headerDroitVisible {
-  font-size: 1.8vh;
-}
-.header-list {
-  text-decoration: none;
-  color: white !important;
-  text-align: end;
-}
+
 .menu {
   width: 100%;
 }
@@ -128,16 +118,9 @@ h1 {
 h2 {
   font-size: 3vh;
 }
-.headerDroitVisible {
-  display: none;
-}
+
 }
 
-@media (min-width: 476px) and (max-width: 778px){
-  .headerDroitVisible {
-    display: none;
-  }
-}
 @media (min-width: 991px) and (max-width: 1065px){
 a {
   font-size: 1.7vh;
